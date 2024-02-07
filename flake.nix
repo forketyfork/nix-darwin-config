@@ -19,6 +19,10 @@
           pkgs.jq
           pkgs.ffmpeg
           pkgs.fdupes
+          pkgs.git
+          pkgs.go
+          pkgs.golangci-lint
+          pkgs.kubernetes-helm
         ];
 
       # Auto upgrade nix package and the daemon service.
@@ -57,6 +61,7 @@
       nix.extraOptions = ''
         extra-platforms = x86_64-darwin aarch64-darwin
       '';
+
     };
   in
   {
