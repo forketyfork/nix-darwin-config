@@ -23,6 +23,18 @@
           pkgs.go
           pkgs.golangci-lint
           pkgs.kubernetes-helm
+          pkgs.awscli
+          pkgs.minikube
+          pkgs.gradle
+          pkgs.direnv
+          pkgs.imagemagick
+          pkgs.yq
+          pkgs.yt-dlp
+          pkgs.kotlin
+          pkgs.scala
+          pkgs.dive
+          pkgs.qpdf
+          pkgs.gh
         ];
 
       # Auto upgrade nix package and the daemon service.
