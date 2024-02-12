@@ -38,6 +38,7 @@
           pkgs.gh
           pkgs.pre-commit
           pkgs.helix
+          pkgs.emacs
         ];
 
       # Auto upgrade nix package and the daemon service.
