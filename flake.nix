@@ -12,7 +12,8 @@
     configuration = { pkgs, ... }: {
       # packages installed for all users
       environment.systemPackages =
-        [ pkgs.vim
+        [ pkgs.curl
+          pkgs.vim
           pkgs.k9s
           pkgs.kind
           pkgs.exercism
@@ -35,6 +36,8 @@
           pkgs.dive
           pkgs.qpdf
           pkgs.gh
+          pkgs.pre-commit
+          pkgs.helix
         ];
 
       # Auto upgrade nix package and the daemon service.
