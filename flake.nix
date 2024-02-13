@@ -40,6 +40,11 @@
           pkgs.helix
           pkgs.emacs
           pkgs.saml2aws
+          pkgs.gping
+          pkgs.yarn
+          pkgs.nodejs_20
+          pkgs.ripgrep
+          pkgs.gnumake
         ];
 
       # Auto upgrade nix package and the daemon service.
