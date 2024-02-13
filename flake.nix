@@ -39,6 +39,7 @@
           pkgs.pre-commit
           pkgs.helix
           pkgs.emacs
+          pkgs.saml2aws
         ];
 
       # Auto upgrade nix package and the daemon service.
