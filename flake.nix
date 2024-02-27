@@ -14,42 +14,42 @@
   }: let
     configuration = {pkgs, ...}: {
       # packages installed for all users
-      environment.systemPackages = [
-        pkgs.curl
-        pkgs.vim
-        pkgs.k9s
-        pkgs.kind
-        pkgs.exercism
-        pkgs.jq
-        pkgs.ffmpeg
-        pkgs.fdupes
-        pkgs.git
-        pkgs.go
-        pkgs.golangci-lint
-        pkgs.kubernetes-helm
-        pkgs.awscli
-        pkgs.minikube
-        pkgs.gradle
-        pkgs.direnv
-        pkgs.imagemagick
-        pkgs.yq
-        pkgs.yt-dlp
-        pkgs.kotlin
-        pkgs.scala
-        pkgs.dive
-        pkgs.qpdf
-        pkgs.gh
-        pkgs.pre-commit
-        pkgs.helix
-        pkgs.emacs
-        pkgs.saml2aws
-        pkgs.gping
-        pkgs.yarn
-        pkgs.nodejs_20
-        pkgs.ripgrep
-        pkgs.gnumake
-        pkgs.alejandra
-        pkgs.neovim
+      environment.systemPackages = with pkgs; [
+        curl
+        vim
+        k9s
+        kind
+        exercism
+        jq
+        ffmpeg
+        fdupes
+        git
+        go
+        golangci-lint
+        kubernetes-helm
+        awscli
+        minikube
+        gradle
+        direnv
+        imagemagick
+        yq
+        yt-dlp
+        kotlin
+        scala
+        dive
+        qpdf
+        gh
+        pre-commit
+        helix
+        emacs
+        saml2aws
+        gping
+        yarn
+        nodejs_20
+        ripgrep
+        gnumake
+        alejandra
+        neovim
       ];
 
       # Auto upgrade nix package and the daemon service.
