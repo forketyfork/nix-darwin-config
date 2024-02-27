@@ -7,45 +7,51 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
-  let
-    configuration = { pkgs, ... }: {
+  outputs = inputs @ {
+    self,
+    nix-darwin,
+    nixpkgs,
+  }: let
+    configuration = {pkgs, ...}: {
       # packages installed for all users
-      environment.systemPackages =
-        [ pkgs.curl
-          pkgs.vim
-          pkgs.k9s
-          pkgs.kind
-          pkgs.exercism
-          pkgs.jq
-          pkgs.ffmpeg
-          pkgs.fdupes
-          pkgs.git
-          pkgs.go
-          pkgs.golangci-lint
-          pkgs.kubernetes-helm
-          pkgs.awscli
-          pkgs.minikube
-          pkgs.gradle
-          pkgs.direnv
-          pkgs.imagemagick
-          pkgs.yq
-          pkgs.yt-dlp
-          pkgs.kotlin
-          pkgs.scala
-          pkgs.dive
-          pkgs.qpdf
-          pkgs.gh
-          pkgs.pre-commit
-          pkgs.helix
-          pkgs.emacs
-          pkgs.saml2aws
-          pkgs.gping
-          pkgs.yarn
-          pkgs.nodejs_20
-          pkgs.ripgrep
-          pkgs.gnumake
-        ];
+      environment.systemPackages = [
+        pkgs.curl
+        pkgs.vim
+        pkgs.k9s
+        pkgs.kind
+        pkgs.exercism
+        pkgs.jq
+        pkgs.ffmpeg
+        pkgs.fdupes
+        pkgs.git
+        pkgs.go
+        pkgs.golangci-lint
+        pkgs.kubernetes-helm
+        pkgs.awscli
+        pkgs.minikube
+        pkgs.gradle
+        pkgs.direnv
+        pkgs.imagemagick
+        pkgs.yq
+        pkgs.yt-dlp
+        pkgs.kotlin
+        pkgs.scala
+        pkgs.dive
+        pkgs.qpdf
+        pkgs.gh
+        pkgs.pre-commit
+        pkgs.helix
+        pkgs.emacs
+        pkgs.saml2aws
+        pkgs.gping
+        pkgs.yarn
+        pkgs.nodejs_20
+        pkgs.ripgrep
+        pkgs.gnumake
+        pkgs.alejandra
+        pkgs.neovim
+        pkgs.hello
+      ];
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
@@ -55,7 +61,7 @@
       nix.settings.experimental-features = "nix-command flakes";
 
       # Create /etc/zshrc that loads the nix-darwin environment.
-      programs.zsh.enable = true;  # default shell on catalina
+      programs.zsh.enable = true; # default shell on catalina
       # programs.fish.enable = true;
 
       # Set Git commit hash for darwin-version.
@@ -83,18 +89,15 @@
       nix.extraOptions = ''
         extra-platforms = x86_64-darwin aarch64-darwin
       '';
-
     };
-  in
-  {
+  in {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
     darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
-      modules = [ configuration ];
+      modules = [configuration];
     };
 
     # Expose the package set, including overlays, for convenience.
     darwinPackages = self.darwinConfigurations."work".pkgs;
-
- };
+  };
 }
