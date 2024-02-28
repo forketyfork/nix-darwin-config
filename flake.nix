@@ -97,6 +97,9 @@
       nix.extraOptions = ''
         extra-platforms = x86_64-darwin aarch64-darwin
       '';
+      environment.variables = {
+        JAVA_HOME = "${pkgs.jdk17.home}";
+      };
     };
   in {
     # Build darwin flake using:
