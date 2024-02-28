@@ -50,6 +50,7 @@
         gnumake
         alejandra
         neovim
+        karabiner-elements
       ];
 
       # Auto upgrade nix package and the daemon service.
