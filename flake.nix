@@ -98,7 +98,7 @@
         extra-platforms = x86_64-darwin aarch64-darwin
       '';
       environment.variables = {
-        JAVA_HOME = "${pkgs.jdk17.home}";
+        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
       };
     };
   in {
