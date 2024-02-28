@@ -56,7 +56,7 @@
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
 
-      # services.karabiner-elements.enable = true;
+      services.karabiner-elements.enable = true;
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
