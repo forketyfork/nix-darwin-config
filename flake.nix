@@ -50,6 +50,7 @@
         gnumake
         alejandra
         neovim
+        hackgen-nf-font
       ];
 
       # Auto upgrade nix package and the daemon service.
