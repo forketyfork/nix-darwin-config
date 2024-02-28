@@ -50,7 +50,6 @@
         gnumake
         alejandra
         neovim
-        hackgen-nf-font
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -58,6 +57,11 @@
       # nix.package = pkgs.nix;
 
       services.karabiner-elements.enable = true;
+
+      fonts.fontDir.enable = true;
+      fonts.fonts = with pkgs; [
+        nerdfonts
+      ];
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
