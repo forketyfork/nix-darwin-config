@@ -50,6 +50,7 @@
         gnumake
         alejandra
         neovim
+        zulu17
       ];
 
       # Auto upgrade nix package and the daemon service.
