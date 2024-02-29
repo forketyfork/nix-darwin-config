@@ -51,6 +51,7 @@
         alejandra
         neovim
         zulu17
+        shellcheck # Shell script analysis tool
       ];
 
       # Auto upgrade nix package and the daemon service.
