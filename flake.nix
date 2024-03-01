@@ -98,7 +98,12 @@
       nix.extraOptions = ''
         extra-platforms = x86_64-darwin aarch64-darwin
       '';
+
       environment.variables = {
+        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
+      };
+
+      programs.zsh.variables = {
         JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
       };
     };
