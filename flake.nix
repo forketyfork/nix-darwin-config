@@ -72,6 +72,9 @@
 
       # Create /etc/zshrc that loads the nix-darwin environment.
       programs.zsh.enable = true; # default shell on catalina
+      programs.zsh.variables = {
+        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
+      };
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -100,10 +103,6 @@
       '';
 
       environment.variables = {
-        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
-      };
-
-      programs.zsh.variables = {
         JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
       };
     };
