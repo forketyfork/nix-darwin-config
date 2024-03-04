@@ -56,7 +56,7 @@
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
-      # nix.package = pkgs.nix;
+      nix.package = pkgs.nix;
 
       # if karabiner-elements doesn't work after the initial installation,
       # try to disable/enable all related Login Items in the settings
