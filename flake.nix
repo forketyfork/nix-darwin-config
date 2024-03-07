@@ -107,7 +107,7 @@
       };
 
       environment.shellAliases = {
-        fdupes_books = "fdupes -rnd ~/Downloads/books ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Library";
+        fdupes-books = "fdupes -rnd ~/Downloads/books ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Library";
       };
     };
   in {
