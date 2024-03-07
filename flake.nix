@@ -105,6 +105,10 @@
       environment.variables = {
         JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
       };
+
+      environment.shellAliases = {
+        fdupes_books = "fdupes -rnd ~/Downloads/books ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Library";
+      };
     };
   in {
     # Build darwin flake using:
