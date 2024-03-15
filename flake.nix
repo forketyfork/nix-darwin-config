@@ -53,6 +53,7 @@
         zulu17
         shellcheck # Shell script analysis tool
         hadolint # Dockerfile linter
+        ghostscript # converter for PDF, PostScript, etc.
       ];
 
       # Auto upgrade nix package and the daemon service.
