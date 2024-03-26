@@ -54,6 +54,7 @@
         shellcheck # Shell script analysis tool
         hadolint # Dockerfile linter
         ghostscript # converter for PDF, PostScript, etc.
+        pipenv # Python dependency management
       ];
 
       # Auto upgrade nix package and the daemon service.
