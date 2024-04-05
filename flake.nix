@@ -16,6 +16,7 @@
       # packages installed for all users
       environment.systemPackages = with pkgs; [
         curl
+        wget
         vim
         k9s
         kind
