@@ -56,6 +56,7 @@
         hadolint # Dockerfile linter
         ghostscript # converter for PDF, PostScript, etc.
         pipenv # Python dependency management
+        djvulibre # viewing djvu files
       ];
 
       # Auto upgrade nix package and the daemon service.
