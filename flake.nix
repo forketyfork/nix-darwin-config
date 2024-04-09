@@ -56,7 +56,12 @@
         hadolint # Dockerfile linter
         ghostscript # converter for PDF, PostScript, etc.
         pipenv # Python dependency management
-        djvulibre # viewing djvu files
+      ];
+
+      # homebrew-installed packages
+      homebrew.enable = true;
+      homebrew.brews = [
+        "djview4"
       ];
 
       # Auto upgrade nix package and the daemon service.
