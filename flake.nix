@@ -56,6 +56,8 @@
         hadolint # Dockerfile linter
         ghostscript # converter for PDF, PostScript, etc.
         pipenv # Python dependency management
+        kubectl # Kubernetes command line interface
+        kubelogin-oidc # oidc plugin for kubectl
       ];
 
       # homebrew-installed packages
