@@ -62,6 +62,7 @@
       homebrew.enable = true;
       homebrew.brews = [
         "djview4"
+        "coder"
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -95,6 +96,9 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
+
+      # Allow "unfree" packages, e.g. Terraform
+      nixpkgs.config.allowUnfree = true;
 
       # authorize sudo with Touch ID instead of the password
       security.pam.enableSudoTouchIdAuth = true;
