@@ -58,7 +58,6 @@
         pipenv # Python dependency management
         kubectl # Kubernetes command line interface
         kubelogin-oidc # oidc plugin for kubectl
-        google-cloud-sdk # accessing Google Cloud
       ];
 
       # homebrew-installed packages
@@ -66,6 +65,9 @@
       homebrew.brews = [
         "djview4"
         "coder"
+      ];
+      homebrew.casks = [
+        "google-cloud-sdk"
       ];
 
       # Auto upgrade nix package and the daemon service.
