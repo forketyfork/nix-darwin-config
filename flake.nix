@@ -58,6 +58,7 @@
         pipenv # Python dependency management
         kubectl # Kubernetes command line interface
         kubelogin-oidc # oidc plugin for kubectl
+        google-cloud-sdk # accessing Google Cloud
       ];
 
       # homebrew-installed packages
