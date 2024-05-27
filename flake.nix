@@ -59,6 +59,7 @@
         kubectl # Kubernetes command line interface
         kubelogin-oidc # oidc plugin for kubectl
         nasm # assembler
+        hexfiend # hex editor
       ];
 
       # homebrew-installed packages
@@ -105,18 +106,6 @@
 
       # Allow "unfree" packages, e.g. Terraform
       nixpkgs.config.allowUnfree = true;
-
-      nixpkgs.overlays = [
-        (self: super: {
-          git = super.git.overrideAttrs (oldAttrs: rec {
-            version = "2.45.1";
-            src = pkgs.fetchurl {
-              url = "https://www.kernel.org/pub/software/scm/git/git-${version}.tar.xz";
-              hash = "sha256-5k00Co5ieuIs+4vMZRzKC0l88en99SNzVUT/SnMvEr8=";
-            };
-          });
-        })
-      ];
 
       # authorize sudo with Touch ID instead of the password
       security.pam.enableSudoTouchIdAuth = true;
