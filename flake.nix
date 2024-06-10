@@ -70,6 +70,7 @@
       ];
       homebrew.casks = [
         "google-cloud-sdk"
+        "jordanbaird-ice"
       ];
 
       # Auto upgrade nix package and the daemon service.
