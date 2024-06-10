@@ -70,7 +70,7 @@
       ];
       homebrew.casks = [
         "google-cloud-sdk"
-        "jordanbaird-ice"
+        "jordanbaird-ice" # menu bar manager
       ];
 
       # Auto upgrade nix package and the daemon service.
