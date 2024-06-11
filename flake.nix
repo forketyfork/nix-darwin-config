@@ -60,6 +60,7 @@
         kubelogin-oidc # oidc plugin for kubectl
         nasm # assembler
         hexfiend # hex editor
+        shfmt # shell parser, formatter and interpreter
       ];
 
       # homebrew-installed packages
