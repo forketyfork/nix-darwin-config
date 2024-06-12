@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 set -e
 pushd ~/dev/github/forketyfork/nix-darwin-config
 nvim flake.nix
