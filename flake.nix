@@ -62,6 +62,7 @@
         hexfiend # hex editor
         shfmt # shell parser, formatter and interpreter
         rustup # the rust programming language
+        virtualenv # tool to create isolated Python environments
       ];
 
       # homebrew-installed packages
