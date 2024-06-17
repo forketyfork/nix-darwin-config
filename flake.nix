@@ -84,8 +84,7 @@
       # try to disable/enable all related Login Items in the settings
       services.karabiner-elements.enable = true;
 
-      fonts.fontDir.enable = true;
-      fonts.fonts = with pkgs; [
+      fonts.packages = with pkgs; [
         nerdfonts
       ];
 
