@@ -63,7 +63,7 @@
         shfmt # shell parser, formatter and interpreter
         rustup # the rust programming language
         virtualenv # tool to create isolated Python environments
-        inkscape # vector graphics editor
+        inkscape-with-extensions # vector graphics editor
       ];
 
       # homebrew-installed packages
