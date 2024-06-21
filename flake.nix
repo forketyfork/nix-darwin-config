@@ -64,6 +64,7 @@
         rustup # the rust programming language
         virtualenv # tool to create isolated Python environments
         inkscape-with-extensions # vector graphics editor
+        vsce # VS Code extension publication
       ];
 
       # homebrew-installed packages
