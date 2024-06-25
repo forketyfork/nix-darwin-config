@@ -65,6 +65,9 @@
         virtualenv # tool to create isolated Python environments
         inkscape-with-extensions # vector graphics editor
         vsce # VS Code extension publication
+        ocaml # OCaml compiler
+        ocamlPackages.utop # interface to OCaml toplevel
+        ocamlPackages.core # alternative to OCaml's standard library
       ];
 
       # homebrew-installed packages
