@@ -67,10 +67,6 @@
         vsce # VS Code extension publication
         ocaml # OCaml compiler
         opam # OCaml package manager
-        ocamlPackages.utop # interface to OCaml toplevel
-        ocamlPackages.core # alternative to OCaml's standard library
-        ocamlPackages.core_bench
-        ocamlPackages.findlib # OCaml library manager
       ];
 
       # homebrew-installed packages
