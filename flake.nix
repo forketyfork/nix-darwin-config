@@ -69,6 +69,7 @@
         ocamlPackages.utop # interface to OCaml toplevel
         ocamlPackages.core # alternative to OCaml's standard library
         ocamlPackages.findlib # OCaml library manager
+        ocamlPackages.dune_3
       ];
 
       # homebrew-installed packages
