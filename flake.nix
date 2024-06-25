@@ -68,6 +68,7 @@
         ocaml # OCaml compiler
         ocamlPackages.utop # interface to OCaml toplevel
         ocamlPackages.core # alternative to OCaml's standard library
+        ocamlPackages.findlib # OCaml library manager
       ];
 
       # homebrew-installed packages
