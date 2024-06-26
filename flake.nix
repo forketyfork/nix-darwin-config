@@ -67,6 +67,7 @@
         vsce # VS Code extension publication
         ocaml # OCaml compiler
         opam # OCaml package manager
+        nvd # Nix package version diff tool
       ];
 
       # homebrew-installed packages
