@@ -68,6 +68,7 @@
         ocaml # OCaml compiler
         opam # OCaml package manager
         nvd # Nix package version diff tool
+        newsboat # RSS reader
       ];
 
       # homebrew-installed packages
