@@ -69,6 +69,7 @@
         opam # OCaml package manager
         nvd # Nix package version diff tool
         newsboat # RSS reader
+        ollama # create, run and share LLMs
       ];
 
       # homebrew-installed packages
