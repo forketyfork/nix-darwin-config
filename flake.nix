@@ -122,12 +122,47 @@
       security.pam.enableSudoTouchIdAuth = true;
 
       system.defaults = {
-        dock.mru-spaces = false;
-        finder.AppleShowAllExtensions = true;
-        finder.FXPreferredViewStyle = "clmv";
+        dock = {
+          mru-spaces = false;
+          # hot action for bottom left corner: disabled
+          wvous-bl-corner = 1;
+          # hot action for bottom right corner: disabled
+          wvous-br-corner = 1;
+          # hot action for top left corner: disable screen saver
+          wvous-tl-corner = 6;
+          # hot action for top right corner: disabled
+          wvous-tr-corner = 1;
+        };
+
+        trackpad = {
+          # enable three-finger drag
+          TrackpadThreeFingerDrag = true;
+        };
+
+        finder = {
+          AppleShowAllExtensions = true;
+          AppleShowAllFiles = true;
+          FXPreferredViewStyle = "clmv";
+        };
+
         loginwindow.LoginwindowText = "JetBrains";
         screencapture.location = "~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots";
         screensaver.askForPasswordDelay = 10;
+
+        NSGlobalDomain = {
+          # Dark mode
+          AppleInterfaceStyle = "Dark";
+          # Disable automatic spelling correction
+          NSAutomaticSpellingCorrectionEnabled = false;
+          # Disable automatic capitalization
+          NSAutomaticCapitalizationEnabled = false;
+          # Disable automatic quote substitution
+          NSAutomaticQuoteSubstitutionEnabled = false;
+          # Use F1, F2, etc. keys as standard function keys
+          "com.apple.keyboard.fnState" = true;
+          # tap to click
+          "com.apple.mouse.tapBehavior" = 1;
+        };
       };
 
       nix.extraOptions = ''
