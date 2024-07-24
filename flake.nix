@@ -143,6 +143,7 @@
           AppleShowAllExtensions = true;
           AppleShowAllFiles = true;
           FXPreferredViewStyle = "clmv";
+          QuitMenuItem = true;
         };
 
         loginwindow.LoginwindowText = "JetBrains";
