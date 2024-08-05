@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Update and rebuild the nix-darwin configuration
+# Update the flake, build a new nix-dawrin configuration and output the difference with the local configuration
 
 set -eu
 
