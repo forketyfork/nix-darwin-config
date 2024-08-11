@@ -71,6 +71,7 @@
         newsboat # RSS reader
         ollama # create, run and share LLMs
         lnav # log file navigator
+        maven # java build tool
       ];
 
       # homebrew-installed packages
