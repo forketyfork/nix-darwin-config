@@ -83,6 +83,7 @@
       homebrew.casks = [
         "google-cloud-sdk"
         "jordanbaird-ice" # menu bar manager
+        "karabiner-elements"
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -91,7 +92,8 @@
 
       # if karabiner-elements doesn't work after the initial installation,
       # try to disable/enable all related Login Items in the settings
-      services.karabiner-elements.enable = true;
+      # commented out until https://github.com/LnL7/nix-darwin/issues/1041 is solved
+      # services.karabiner-elements.enable = true;
 
       fonts.packages = with pkgs; [
         nerdfonts
