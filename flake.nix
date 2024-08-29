@@ -83,7 +83,7 @@
       homebrew.casks = [
         "google-cloud-sdk"
         "jordanbaird-ice" # menu bar manager
-        # "karabiner-elements"
+        "karabiner-elements"
       ];
 
       # Auto upgrade nix package and the daemon service.
