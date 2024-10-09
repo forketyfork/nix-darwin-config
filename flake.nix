@@ -180,6 +180,7 @@
 
       environment.shellAliases = {
         fdupes-books = "fdupes -rnd ~/Downloads/books ~/Library/Mobile\\ Documents/com\\~apple\\~CloudDocs/Library";
+        git-config-forketyfork = "git config --local user.signingkey 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJoq4nD/EcvDY30Xx4hfQz864TMR3MTNnVvOPYQYJezf' && git config --local user.name Forketyfork && git config --local user.email forketyfork@icloud.com";
       };
     };
   in {
