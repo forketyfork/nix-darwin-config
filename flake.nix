@@ -72,6 +72,7 @@
         ollama # create, run and share LLMs
         lnav # log file navigator
         maven # java build tool
+        realvnc-vnc-viewer # VNC viewer
       ];
 
       # homebrew-installed packages
