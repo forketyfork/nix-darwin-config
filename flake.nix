@@ -73,6 +73,7 @@
         lnav # log file navigator
         maven # java build tool
         realvnc-vnc-viewer # VNC viewer
+        websocat # sending websocket requests
       ];
 
       # homebrew-installed packages
