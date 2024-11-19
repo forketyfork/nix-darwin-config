@@ -87,7 +87,6 @@
         "jordanbaird-ice" # menu bar manager
         "karabiner-elements"
         "blackhole-2ch"
-        "macwhisper"
       ];
 
       # Auto upgrade nix package and the daemon service.
