@@ -86,7 +86,6 @@
         "google-cloud-sdk"
         "jordanbaird-ice" # menu bar manager
         "karabiner-elements"
-        "blackhole-2ch"
       ];
 
       # Auto upgrade nix package and the daemon service.
