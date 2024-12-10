@@ -70,7 +70,8 @@
         nvd # Nix package version diff tool
         newsboat # RSS reader
         ollama # create, run and share LLMs
-        lnav # log file navigator
+        # this pulls gpm for some reason https://discourse.nixos.org/t/darwin-homemanager-some-package-pulling-in-gpm/56827
+        # lnav # log file navigator
         maven # java build tool
         realvnc-vnc-viewer # VNC viewer
         websocat # sending websocket requests
@@ -97,8 +98,8 @@
       # commented out until https://github.com/LnL7/nix-darwin/issues/1041 is solved
       # services.karabiner-elements.enable = true;
 
-      fonts.packages = with pkgs; [
-        nerdfonts
+      fonts.packages = [
+        pkgs.nerd-fonts.iosevka
       ];
 
       # Necessary for using flakes on this system.
