@@ -75,6 +75,7 @@
         maven # java build tool
         realvnc-vnc-viewer # VNC viewer
         websocat # sending websocket requests
+        cmake # to build whisper
       ];
 
       # homebrew-installed packages
