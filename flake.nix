@@ -76,6 +76,7 @@
         realvnc-vnc-viewer # VNC viewer
         websocat # sending websocket requests
         cmake # to build whisper
+        zulu21 # JDK 21
       ];
 
       # homebrew-installed packages
