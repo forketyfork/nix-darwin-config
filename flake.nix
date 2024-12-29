@@ -89,6 +89,7 @@
         "google-cloud-sdk"
         "jordanbaird-ice" # menu bar manager
         "karabiner-elements"
+        "ghostty" # Ghostty terminal emulator; not yet packaged for Darwin, see https://github.com/ghostty-org/ghostty/discussions/2824
       ];
 
       # Auto upgrade nix package and the daemon service.
