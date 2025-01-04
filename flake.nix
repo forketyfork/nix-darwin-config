@@ -77,6 +77,7 @@
         websocat # sending websocket requests
         cmake # to build whisper
         zulu21 # JDK 21
+        gawk
       ];
 
       # homebrew-installed packages
