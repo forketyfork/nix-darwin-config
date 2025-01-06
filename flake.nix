@@ -78,7 +78,7 @@
         zulu21 # JDK 21
         gawk # GNU version of awk
         hexfiend # Hex editor
-        zed # Zed editor
+        zed-editor # Zed editor
       ];
 
       # homebrew-installed packages
