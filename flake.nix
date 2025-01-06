@@ -135,6 +135,12 @@
         set -e
         echo "Setting global git configuration"
         git config --global core.autocrlf input
+        git config --global merge.tool vimdiff
+        git config --global init.defaultbranch main
+        git config --global core.editor vim
+        git config --global gpg.format ssh
+        git config --global commit.gpgsign true
+        git config --global gpg.ssh.program /Applications/1Password.app/Contents/MacOS/op-ssh-sign
       '';
 
       system.defaults = {
