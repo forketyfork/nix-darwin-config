@@ -131,13 +131,11 @@
       # authorize sudo with Touch ID instead of the password
       security.pam.enableSudoTouchIdAuth = true;
 
-      system.activationScripts = {
-        configureGit.text = ''
-          set -e
-          echo "Setting global git configuration"
-          git config --global core.autocrlf input
-        '';
-      };
+      system.activationScripts.extraUserActivation.text = ''
+        set -e
+        echo "Setting global git configuration"
+        git config --global core.autocrlf input
+      '';
 
       system.defaults = {
         dock = {
