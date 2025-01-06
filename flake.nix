@@ -78,7 +78,7 @@
         cmake # to build whisper
         zulu21 # JDK 21
         gawk # GNU version of awk
-        hexfiend
+        hexfiend # Hex editor
       ];
 
       # homebrew-installed packages
