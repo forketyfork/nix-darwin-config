@@ -59,7 +59,6 @@
         kubectl # Kubernetes command line interface
         kubelogin-oidc # oidc plugin for kubectl
         nasm # assembler
-        hexfiend # hex editor
         shfmt # shell parser, formatter and interpreter
         rustup # the rust programming language
         virtualenv # tool to create isolated Python environments
@@ -79,6 +78,7 @@
         zulu21 # JDK 21
         gawk # GNU version of awk
         hexfiend # Hex editor
+        zed # Zed editor
       ];
 
       # homebrew-installed packages
