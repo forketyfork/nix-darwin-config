@@ -132,7 +132,11 @@
       security.pam.enableSudoTouchIdAuth = true;
 
       system.activationScripts = {
-        configureGit.text = "git config --global core.autocrlf input";
+        configureGit.text = ''
+          set -e
+          echo "Setting global git configuration"
+          git config --global core.autocrlf input
+        '';
       };
 
       system.defaults = {
