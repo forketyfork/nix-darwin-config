@@ -112,7 +112,7 @@
       # Create /etc/zshrc that loads the nix-darwin environment.
       programs.zsh.enable = true; # default shell on catalina
       programs.zsh.variables = {
-        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
+        JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
       };
 
       # Set Git commit hash for darwin-version.
@@ -130,6 +130,12 @@
 
       # authorize sudo with Touch ID instead of the password
       security.pam.enableSudoTouchIdAuth = true;
+
+      system.activationScripts = {
+        configureGit = {
+          text = "git config --global core.autocrlf input";
+        };
+      };
 
       system.defaults = {
         dock = {
@@ -181,7 +187,7 @@
       '';
 
       environment.variables = {
-        JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
+        JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
         DOCKER_CLI_HINTS = "false"; # disable stupid "what's next" hints
       };
 
