@@ -131,6 +131,7 @@
       # authorize sudo with Touch ID instead of the password
       security.pam.enableSudoTouchIdAuth = true;
 
+      # git configuration
       system.activationScripts.extraUserActivation.text = ''
         set -e
         echo "Setting global git configuration"
