@@ -79,6 +79,7 @@
         gawk # GNU version of awk
         hexfiend # Hex editor
         zed-editor # Zed editor
+        vlc-bin # VLC media player
       ];
 
       # homebrew-installed packages
