@@ -115,9 +115,25 @@
       nix.settings.experimental-features = "nix-command flakes";
 
       # Create /etc/zshrc that loads the nix-darwin environment.
-      programs.zsh.enable = true; # default shell on catalina
-      programs.zsh.variables = {
-        JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
+      programs.zsh = {
+        enable = true; # default shell on catalina
+        variables = {
+          JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
+        };
+        enableFastSyntaxHighlighting = true;
+        enableFzfCompletion = true;
+        enableFzfGit = true;
+        enableFzfHistory = true;
+        shellInit = ''
+          function y() {
+              local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+              yazi "$@" --cwd-file="$tmp"
+              if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+                  builtin cd -- "$cwd"
+              fi
+              rm -f -- "$tmp"
+          }
+        '';
       };
 
       # Set Git commit hash for darwin-version.
