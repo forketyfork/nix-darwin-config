@@ -80,6 +80,9 @@
         hexfiend # Hex editor
         zed-editor # Zed editor
         vlc-bin # VLC media player
+        fzf # command-line fuzzy finder
+        yazi # terminal file manager
+        lnav # multifile log navigator
       ];
 
       # homebrew-installed packages
