@@ -119,6 +119,7 @@
         enable = true; # default shell on catalina
         variables = {
           JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
+          EDITOR = "vim";
         };
         enableFastSyntaxHighlighting = true;
         enableFzfCompletion = true;
