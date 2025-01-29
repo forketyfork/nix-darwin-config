@@ -228,10 +228,10 @@
 
       launchd.daemons = {
         ollama = {
-          script = ''
-            /run/current-system/sw/bin/ollama serve
-          '';
           serviceConfig = {
+            Program = "/run/current-system/sw/bin/ollama";
+            ProgramArguments = ["serve"];
+            Label = "ollama";
             EnvironmentVariables = {
               OLLAMA_HOST = "127.0.0.1:11434";
               OLLAMA_KV_CACHE_TYPE = "q4_0";
