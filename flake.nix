@@ -69,8 +69,6 @@
         nvd # Nix package version diff tool
         newsboat # RSS reader
         ollama # create, run and share LLMs
-        # this pulls gpm for some reason https://discourse.nixos.org/t/darwin-homemanager-some-package-pulling-in-gpm/56827
-        # lnav # log file navigator
         maven # java build tool
         realvnc-vnc-viewer # VNC viewer
         websocat # sending websocket requests
@@ -118,7 +116,7 @@
       programs.zsh = {
         enable = true; # default shell on catalina
         variables = {
-          JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
+          JAVA_HOME = "${pkgs.zulu21.home}/zulu-21.jdk/Contents/Home";
           EDITOR = "vim";
         };
         enableFastSyntaxHighlighting = true;
@@ -226,6 +224,23 @@
       environment.shellAliases = {
         fdupes-books = "fdupes -rnd ~/Downloads/books ~/Library/Mobile\\ Documents/com\\~apple\\~CloudDocs/Library";
         git-config-forketyfork = "git config --local user.signingkey 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJoq4nD/EcvDY30Xx4hfQz864TMR3MTNnVvOPYQYJezf' && git config --local user.name Forketyfork && git config --local user.email forketyfork@icloud.com";
+      };
+
+      launchd.daemons = {
+        ollama = {
+          script = ''
+            /run/current-system/sw/bin/ollama serve
+          '';
+          serviceConfig = {
+            EnvironmentVariables = {
+              OLLAMA_HOST = "127.0.0.1:11434";
+              OLLAMA_KV_CACHE_TYPE = "q4_0";
+              OLLAMA_FLASH_ATTENTION = "1";
+            };
+            RunAtLoad = true;
+            KeepAlive = true;
+          };
+        };
       };
     };
   in {
