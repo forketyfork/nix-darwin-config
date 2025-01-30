@@ -81,6 +81,7 @@
         fzf # command-line fuzzy finder
         yazi # terminal file manager
         lnav # multifile log navigator
+        hyperfine
       ];
 
       # homebrew-installed packages
