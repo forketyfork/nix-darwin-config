@@ -210,6 +210,8 @@
           "com.apple.keyboard.fnState" = true;
           # tap to click
           "com.apple.mouse.tapBehavior" = 1;
+          # drag windows on Ctrl+Cmd+Click
+          NSWindowShouldDragOnGesture = true;
         };
       };
 
