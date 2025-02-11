@@ -236,11 +236,11 @@
             Label = "ollama";
             EnvironmentVariables = {
               OLLAMA_HOST = "127.0.0.1:11434";
-              OLLAMA_KV_CACHE_TYPE = "q4_0";
+              # OLLAMA_KV_CACHE_TYPE = "q4_0";
               OLLAMA_FLASH_ATTENTION = "1";
             };
-            StandardOutPath = "/tmp/ollama.out.log";
-            StandardErrorPath = "/tmp/ollama.err.log";
+            StandardOutPath = /tmp/ollama.out.log;
+            StandardErrorPath = /tmp/ollama.err.log;
             RunAtLoad = true;
             KeepAlive = true;
           };
