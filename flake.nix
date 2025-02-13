@@ -13,6 +13,7 @@
     nixpkgs,
   }: let
     configuration = {pkgs, ...}: {
+      # Fixing an error "The default Nix build user group ID was changed from 30000 to 350"
       ids.gids.nixbld = 350;
 
       # packages installed for all users
