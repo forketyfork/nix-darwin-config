@@ -13,6 +13,8 @@
     nixpkgs,
   }: let
     configuration = {pkgs, ...}: {
+      ids.gids.nixbld = 350;
+
       # packages installed for all users
       environment.systemPackages = with pkgs; [
         curl
@@ -98,7 +100,6 @@
       ];
 
       # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
       nix.package = pkgs.nix;
 
       # if karabiner-elements doesn't work after the initial installation,
