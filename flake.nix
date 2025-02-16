@@ -170,6 +170,9 @@
 
         # setting up the default toolchain for rust
         rustup default stable
+
+        # installing cocoapods
+        gem install cocoapods
       '';
 
       system.defaults = {
