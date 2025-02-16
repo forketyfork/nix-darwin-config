@@ -92,6 +92,7 @@
       homebrew.brews = [
         "djview4"
         "coder"
+        "kdoctor" # KDoctor, to verify that KMP dev tools are properly installed
       ];
       homebrew.casks = [
         "google-cloud-sdk"
