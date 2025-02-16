@@ -84,7 +84,8 @@
         fzf # command-line fuzzy finder
         yazi # terminal file manager
         lnav # multifile log navigator
-        hyperfine
+        hyperfine # benchmark tool
+        ruby # override the system installation that's not compatible with cocoapods
       ];
 
       # homebrew-installed packages
