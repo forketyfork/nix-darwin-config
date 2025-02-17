@@ -228,6 +228,7 @@
       environment.variables = {
         JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
         DOCKER_CLI_HINTS = "false"; # disable stupid "what's next" hints
+        LC_ALL = "en_US.UTF-8"; # required by CocoaPods
       };
 
       environment.shellAliases = {
