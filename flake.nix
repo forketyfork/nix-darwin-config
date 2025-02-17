@@ -124,7 +124,6 @@
         variables = {
           JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk/Contents/Home";
           EDITOR = "vim";
-          LC_ALL = "en_US.UTF-8"; # CocoaPods requires the terminal to have UTF-8 encoding
         };
         enableFastSyntaxHighlighting = true;
         enableFzfCompletion = true;
