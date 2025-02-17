@@ -85,7 +85,8 @@
         yazi # terminal file manager
         lnav # multifile log navigator
         hyperfine # benchmark tool
-        ruby # override the system installation that's not compatible with cocoapods
+        ruby # instead of the outdated old version, used for cocoapods
+        cocoapods # for XCode project dependency management
       ];
 
       # homebrew-installed packages
@@ -170,9 +171,6 @@
 
         # setting up the default toolchain for rust
         rustup default stable
-
-        # installing cocoapods
-        gem install cocoapods
       '';
 
       system.defaults = {
