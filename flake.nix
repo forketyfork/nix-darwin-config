@@ -129,6 +129,9 @@
         enableFzfCompletion = true;
         enableFzfGit = true;
         enableFzfHistory = true;
+        loginShellInit = ''
+          export LC_ALL=en_US.UTF-8 # CocoaPods requires the terminal to have UTF-8 encoding
+        '';
         shellInit = ''
           function y() {
               local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
