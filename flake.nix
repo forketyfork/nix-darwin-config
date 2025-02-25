@@ -156,7 +156,7 @@
       nixpkgs.config.allowUnfree = true;
 
       # authorize sudo with Touch ID instead of the password
-      security.pam.enableSudoTouchIdAuth = true;
+      security.pam.services.sudo_local.touchIdAuth = true;
 
       # git configuration
       system.activationScripts.extraUserActivation.text = ''
