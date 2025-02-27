@@ -87,6 +87,7 @@
         hyperfine # benchmark tool
         ruby # instead of the outdated old version, used for cocoapods
         cocoapods # for XCode project dependency management
+        just # just a command runner
       ];
 
       # homebrew-installed packages
