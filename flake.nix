@@ -96,6 +96,7 @@
         "djview4"
         "coder"
         "kdoctor" # KDoctor, to verify that KMP dev tools are properly installed
+        "vite" # Frontend build tool
       ];
       homebrew.casks = [
         "google-cloud-sdk"
