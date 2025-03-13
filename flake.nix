@@ -88,6 +88,7 @@
         ruby # instead of the outdated old version, used for cocoapods
         cocoapods # for XCode project dependency management
         just # just a command runner
+        go-tools # Collection of tools and libraries for working with Go code, including linters and static analysis.
       ];
 
       # homebrew-installed packages
