@@ -89,6 +89,7 @@
         cocoapods # for XCode project dependency management
         just # just a command runner
         go-tools # Collection of tools and libraries for working with Go code, including linters and static analysis.
+        gimp # image editor
       ];
 
       # homebrew-installed packages
