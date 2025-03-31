@@ -90,6 +90,7 @@
         just # just a command runner
         go-tools # Collection of tools and libraries for working with Go code, including linters and static analysis.
         gimp # image editor
+        bundix # generates a Nix expression for a Bundler-managed Ruby application
       ];
 
       # homebrew-installed packages
