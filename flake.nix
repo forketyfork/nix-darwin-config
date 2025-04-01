@@ -91,6 +91,7 @@
         go-tools # Collection of tools and libraries for working with Go code, including linters and static analysis.
         gimp # image editor
         bundix # generates a Nix expression for a Bundler-managed Ruby application
+        cachix # Nix build cache
       ];
 
       # homebrew-installed packages
