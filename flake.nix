@@ -92,6 +92,7 @@
         gimp # image editor
         bundix # generates a Nix expression for a Bundler-managed Ruby application
         cachix # Nix build cache
+        nh # nix helper
       ];
 
       # homebrew-installed packages
