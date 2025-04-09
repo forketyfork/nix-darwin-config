@@ -181,7 +181,7 @@
         git config --global gpg.ssh.program /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 
         # setting up the default toolchain for rust
-        rustup default stable
+        rustup default 1.86.0
       '';
 
       system.defaults = {
