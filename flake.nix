@@ -45,7 +45,7 @@
         gh
         pre-commit
         helix
-        emacs
+        # emacs # commented out until the error is fixed
         saml2aws
         gping
         yarn
@@ -63,7 +63,10 @@
         kubelogin-oidc # oidc plugin for kubectl
         nasm # assembler
         shfmt # shell parser, formatter and interpreter
+
         rustup # the rust programming language
+        cargo-edit # dependency management in Rust projects
+
         virtualenv # tool to create isolated Python environments
         inkscape-with-extensions # vector graphics editor
         vsce # VS Code extension publication
