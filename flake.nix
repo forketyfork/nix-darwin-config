@@ -122,8 +122,9 @@
       # commented out until https://github.com/LnL7/nix-darwin/issues/1041 is solved
       # services.karabiner-elements.enable = true;
 
-      fonts.packages = [
-        pkgs.nerd-fonts.iosevka
+      fonts.packages = with pkgs; [
+        nerd-fonts.iosevka
+        inter
       ];
 
       # Necessary for using flakes on this system.
