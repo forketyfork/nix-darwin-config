@@ -96,6 +96,7 @@
         bundix # generates a Nix expression for a Bundler-managed Ruby application
         cachix # Nix build cache
         nh # nix helper
+        yamllint # yaml linter
       ];
 
       # homebrew-installed packages
