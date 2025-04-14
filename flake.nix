@@ -97,6 +97,7 @@
         cachix # Nix build cache
         nh # nix helper
         yamllint # yaml linter
+        yamlfmt # yaml formatter
       ];
 
       # homebrew-installed packages
