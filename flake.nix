@@ -137,7 +137,7 @@
       programs.zsh = {
         enable = true; # default shell on catalina
         variables = {
-          JAVA_HOME = "${pkgs.zulu17.home}/zulu-17.jdk";
+          JAVA_HOME = "${pkgs.zulu17.home}";
           EDITOR = "vim";
         };
         enableFastSyntaxHighlighting = true;
