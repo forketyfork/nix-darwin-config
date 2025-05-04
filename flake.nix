@@ -82,7 +82,6 @@
         zulu21 # JDK 21
         gawk # GNU version of awk
         hexfiend # Hex editor
-        zed-editor # Zed editor
         vlc-bin # VLC media player
         fzf # command-line fuzzy finder
         yazi # terminal file manager
